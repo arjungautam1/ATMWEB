@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ATMWEB</display-name>
+ <servlet>
+ <servlet-name>log</servlet-name>
+ <servlet-class>com.atm.Login</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>log</servlet-name>
+ <url-pattern>/login</url-pattern>
+ </servlet-mapping>
+  <servlet>
+ <servlet-name>corporate</servlet-name>
+ <servlet-class>com.atm.CorporateSignup</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>corporate</servlet-name>
+ <url-pattern>/corporatesignup</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>coplogin</servlet-name>
+ <servlet-class>com.atm.CorporateLogin</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>coplogin</servlet-name>
+ <url-pattern>/corporatelogin</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>option</servlet-name>
+ <servlet-class>com.atm.Option</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>option</servlet-name>
+ <url-pattern>/corporate</url-pattern>
+ </servlet-mapping>
+  <servlet>
+ <servlet-name>option1</servlet-name>
+ <servlet-class>com.atm.Option1</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>option1</servlet-name>
+ <url-pattern>/customer</url-pattern>
+ </servlet-mapping>
+ <servlet>
+ <servlet-name>corporatelogin</servlet-name>
+ <servlet-class>com.atm.CorporateLogin</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>corporatelogin</servlet-name>
+<url-pattern>/corporatelog</url-pattern>
+</servlet-mapping> 
+<servlet>
+ <servlet-name>customersign</servlet-name>
+ <servlet-class>com.atm.CustomerSignup</servlet-class>
+ </servlet>
+<servlet-mapping>
+<servlet-name>customersign</servlet-name>
+<url-pattern>/customersignup</url-pattern>
+</servlet-mapping> 
+<servlet>
+<servlet-name>customerlog</servlet-name>
+<servlet-class>com.atm.CustomerLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>customerlog</servlet-name>
+<url-pattern>/customerlog</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>cuslogin</servlet-name>
+<servlet-class>com.atm.CustomerLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>cuslogin</servlet-name>
+<url-pattern>/customerlogin</url-pattern>
+</servlet-mapping>
+
+</web-app>
