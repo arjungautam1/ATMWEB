@@ -19,8 +19,9 @@ public class CustomerSignup extends HttpServlet {
 	int bankid=Integer.parseInt(request.getParameter("id"));
 	String password=request.getParameter("pass");
 	String gender=request.getParameter("gender");
+	String email=request.getParameter("email");
 	try {
-		String query="insert into customer values('"+name+"','"+lastname+"','"+address+"',"+bankid+",'"+password+"','"+gender+"')";
+		String query="insert into customer values('"+name+"','"+lastname+"','"+address+"',"+bankid+",'"+password+"','"+gender+"','"+email+"')";
 		Connection con=ConnectionManager.jdbcConnection();
 		Statement st=con.createStatement();
 		st.executeUpdate(query);

@@ -22,9 +22,9 @@ public class CustomerLogin extends HttpServlet {
 		Statement st=con.createStatement();
 		ResultSet rs=st.executeQuery(query);
 		rs.next();
-		//String uname=rs.getString("firstname");
+		String uname=rs.getString("firstname");
 		String pass=rs.getString("password");
-		if(pass.equals(password))
+		if(pass.equals(password)&&uname.contentEquals(username))
 {
 	response.sendRedirect("customerweb.jsp");
 }

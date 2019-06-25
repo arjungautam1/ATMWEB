@@ -24,7 +24,7 @@ public class CorporateSignup extends HttpServlet {
 
 	try {
 		
-		String query="insert into corporate values('"+name+"','"+lastname+"','"+post+"','"+password+"','"+gender+"')";
+		String query="insert into corporate values('"+name+"','"+lastname+"','"+post+"','"+password+"','"+gender+"',"+bankid+")";
 		Connection con=ConnectionManager.jdbcConnection();
 		Statement st=con.createStatement();
 		st.executeUpdate(query);

@@ -73,5 +73,13 @@
 <servlet-name>cuslogin</servlet-name>
 <url-pattern>/customerlogin</url-pattern>
 </servlet-mapping>
+<servlet>
+<servlet-name>per</servlet-name>
+<servlet-class>com.atm.PersonalInformation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>per</servlet-name>
+<url-pattern>/accinfo</url-pattern>
+</servlet-mapping>
 
 </web-app>

@@ -24,7 +24,8 @@ Enter password: <input type="password" name="pass"placeholder="Password"><br>
 Enter First name:<br><input type="text" name="firstname"placeholder="First Name ">
 <br>Enter Last name:<br><input type="text" name="lastname"placeholder="Last Name">
 <br>Enter your address :<br><input type="text" name="address"placeholder="Address ">
-<br>Enter the BankID:<br><input type="text" name="id"placeholder="Bank Id">
+<br>Enter the Account No:<br><input type="text" name="id"placeholder="Account Number">
+<br>Enter your e-mail No:<br><input type="email" name="email" placeholder="e-mail">
 <br>Create password:<br><input type="password" name="pass"placeholder="Password">
 <br>Enter gender :<br><input type="radio" name="gender" value="Male" checked>Male
 <input type="radio" name="gender" value="Female">Female

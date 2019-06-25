@@ -23,7 +23,7 @@ Enter password: <input type="password" name="pass"placeholder="Password"><br><br
 
 <h2>Corporate SignUp</h2>
 <form action="corporatesignup"method="get">
-Enter First name:<br><input type="text" placeholder="First Name" name="firstname">
+Enter First name:<br><input type="text" placeholder="Username" name="firstname">
 <br>Enter Last name:<br><input type="text" placeholder="Last Name" name="lastname">
 <br>Enter your Post :<br><input type="text" placeholder="Post "name="post">
 <br>Enter the BankID:<br><input type="number" name="id" placeholder="Bank Id "> 
