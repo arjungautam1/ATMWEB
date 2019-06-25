@@ -18,5 +18,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/laserarjun/Documents/Jar Files/javax.mail-1.4.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -19,10 +19,12 @@ public class PersonalInformation extends HttpServlet {
 		int account=Integer.parseInt(request.getParameter("accno"));
 	
 		try {
+			
 			String query="select * from customer";
 			Connection con=ConnectionManager.jdbcConnection();
 			Statement st=con.createStatement();
 			ResultSet rs=st.executeQuery(query);
+			
 			rs.next();
 			int bankid=rs.getInt("id");
 			String firstname=rs.getString("firstname");
@@ -39,13 +41,15 @@ public class PersonalInformation extends HttpServlet {
 				out.println("<br><hr>Address :"+address);
 				out.println("<br><hr>Gender :"+gender);
 				out.println("<br><hr>e-mail :"+email);
-				out.println("<br><hr><h2>-- Thanks For Using Banking Services --");
+				out.println("<br><hr><h2>-- Thanks For Using Our Banking Services --");
 				
 			}
 			else
 			{
 				response.sendRedirect("customerweb.jsp");
 			}
+			String query1="insert into balance(id)values("+account+")";
+			st.executeUpdate(query1);
 		}catch(Exception e)
 		{
 			e.printStackTrace();
