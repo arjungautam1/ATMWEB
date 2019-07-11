@@ -8,7 +8,7 @@
 </head>
 <body bgcolor="#87CEEB";>
 
-<h1><font color="white"> -- TEXAS e-BANKING --</font></h1><br>
+<h1><font color="white"> --  TEXAS e-BANKING --</font></h1><br>
 <h2>Corporate Control Page</h2><br>
 <hr><h2>General Information of customer  </h2>
 <form action="accinfo" method="get">
